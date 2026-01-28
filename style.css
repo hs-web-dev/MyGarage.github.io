@@ -60,7 +60,7 @@ main {
 
 .slider { display: flex; 
 width: max-content; 
-animation: slide 40s linear infinite; 
+animation: slide 50s linear infinite; 
 }
 
 .slider:hover {
