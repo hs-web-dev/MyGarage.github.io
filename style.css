@@ -152,9 +152,9 @@ table {
 
 th, td {
   text-align: left;
-  padding: 5px;
+  padding: 10px;
 }
 
 tr:nth-child(even) {
-  background-color: ##DEDEDE;
+  background-color: #DEDEDE;
 }
