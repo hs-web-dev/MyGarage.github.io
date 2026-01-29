@@ -146,8 +146,9 @@ a:hover {
 }
 
 table {
+
   border-collapse: collapse;
-  width: 100%;
+  width: 70%;
 }
 
 th, td {
@@ -156,5 +157,5 @@ th, td {
 }
 
 tr:nth-child(even) {
-  background-color: #D6EEEE;
+  background-color: ##DEDEDE;
 }
