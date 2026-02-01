@@ -17,6 +17,58 @@
     <section class="hero">
         <h2>Galerie de voitures</h2>
         <p></p>
+    <div class="slider">
+    <button class="arrow left" onclick="changeSlide(-1)">◀</button>
+    <button class="arrow right" onclick="changeSlide(1)">▶</button>
+
+    <div class="slides" id="slides">
+        <div class="slide">
+            <img src="https://picsum.photos/id/1015/900/420">
+            <div class="slide-title">Montagne</div>
+        </div>
+
+        <div class="slide">
+            <img src="https://picsum.photos/id/1025/900/420">
+            <div class="slide-title">Forêt</div>
+        </div>
+
+        <div class="slide">
+            <img src="https://picsum.photos/id/1035/900/420">
+            <div class="slide-title">Désert</div>
+        </div>
+
+        <div class="slide">
+            <img src="https://picsum.photos/id/1045/900/420">
+            <div class="slide-title">Lac</div>
+        </div>
+
+        <div class="slide">
+            <img src="https://picsum.photos/id/1055/900/420">
+            <div class="slide-title">Vallée</div>
+        </div>
+    </div>
+</div>
+
+<script>
+let current = 0;
+const totalSlides = 5;
+const slides = document.getElementById("slides");
+
+function updateSlider() {
+    slides.style.transform = `translateX(-${current * 100}%)`;
+}
+
+function changeSlide(direction) {
+    current += direction;
+
+    if (current < 0) current = 0;
+    if (current > totalSlides - 1) current = totalSlides - 1;
+
+    updateSlider();
+}
+
+updateSlider();
+</script>
     </section>
 
     <section class="slider-wrapper">
