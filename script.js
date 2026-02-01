@@ -1,19 +1,19 @@
 let current = 0;
-const totalSlides = 12;
 const slides = document.getElementById("slides");
+const totalSlides = slides.children.length;
 
 function updateSlider() {
-    const step = 100 / totalSlides; // pourcentage par slide
-    slides.style.transform = `translateX(-${current * step}%)`;
+    slides.style.transform = `translateX(-${current * 100}%)`;
 }
 
-function changeSlide(direction) {
+window.changeSlide = function(direction) {
     current += direction;
 
     if (current < 0) current = 0;
     if (current > totalSlides - 1) current = totalSlides - 1;
 
     updateSlider();
-}
+};
 
 updateSlider();
+
