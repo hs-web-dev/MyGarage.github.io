@@ -12,19 +12,19 @@
 
 .slides {
     display: flex;
-    width: 1200%;          /* 12 slides */
+    width: 1200%; /* 12 slides */
     transition: transform 0.5s ease;
 }
 
 .slide {
     width: 100%;
     flex-shrink: 0;
-    position: relative;
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 450px;
+    position: relative;
 }
 
 .slide img {
@@ -35,9 +35,7 @@
     object-fit: contain;
 }
 
-
-
-/* ----- TITRE SUR L'IMAGE ----- */
+/* ----- TITRE ----- */
 .slide-title {
     position: absolute;
     bottom: 20px;
@@ -49,14 +47,14 @@
     border-radius: 5px;
 }
 
-/* ----- BOUTONS RECTANGULAIRES ----- */
+/* ----- FLECHES ----- */
 .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(255,255,255,0.3);
     border: none;
-    padding: 20px 20px;
+    padding: 20px;
     cursor: pointer;
     font-size: 20px;
     border-radius: 5px;
@@ -68,20 +66,10 @@
     background: rgba(255,255,255,1);
 }
 
-.left { left: 0px; }
-.right { right: 0px; }
+.left { left: 0; }
+.right { right: 0; }
 
-/* ----- COMPTEUR (invisible maintenant) ----- */
-.counter { display: none; }
-
-/* ----- BOUTONS DU BAS (invisibles) ----- */
-.controls { display: none; }
-
-
-
-
-
-
+/* ----- PAGE STYLE ----- */
 * {
     margin: 0;
     padding: 0;
@@ -90,7 +78,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;;
+    background: #f4f6f9;
     color: #1a1a1a;
 }
 
@@ -110,6 +98,7 @@ header h1 {
 main {
     padding: 40px;
 }
+
 
 table {
   border-collapse: collapse;
